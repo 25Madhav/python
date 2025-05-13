@@ -1,5 +1,6 @@
-a=int(input("enter number:"))
-while a%2 and a%a//2:
-    print("the number is not a prime number.")
-    break
-print("tne is not a prime number.")
+a=6
+b=6
+while a==6:
+    while b==6:
+        print("#",end="")
+    print(" ")
