@@ -1,0 +1,9 @@
+a={1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2}
+b={3,1,4,5,6,7}
+print(a)
+print(type(a))
+a.add("Madhav")
+print(a)
+print(a.intersection(b))
+print(a.union(b))
+print(a.difference(b))
