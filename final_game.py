@@ -10,7 +10,7 @@ pygame.display.set_caption("COLLECT THE COINS TO WIN!")
 
 # Player settings
 player_x = 370
-player_y = 480
+player_y = 480                                
 player_speed = 0.3
 player_width = 50
 player_height = 50
@@ -43,7 +43,7 @@ font = pygame.font.Font(None, 36)
 # Coin settings
 coin_width = 30
 coin_height = 30
-coin_color = (255, 223, 0)  # Gold
+coin_color = (255, 223, 0)  # yellow
 coin_value = 1000
 
 coin_x = random.randint(0, screen_width - coin_width)
