@@ -1,0 +1,47 @@
+def greet_user():
+    print("Hello! I am an AI Chat Bot.")
+    name = input("What's your name? ")
+
+    while True:
+        age_str = input(f"Nice to meet you, {name}! How old are you? ")
+        if age_str.isdigit():
+            age = int(age_str)
+            break
+        else:
+            print("Please enter a valid age (a number).")
+    
+    user_info = {"name": name, "age": age}
+    return user_info
+
+
+def get_mood():
+    while True:
+        mood = input("How are you feeling today? (good/bad): ").lower()
+        if mood in ["good", "bad"]:
+            return mood
+        else:
+            print("I didn't quite catch that. Please tell me if you're feeling 'good' or 'bad'.")
+
+
+def respond_to_mood(mood):
+    if mood == "good":
+        print("I'm glad to hear that!")
+    elif mood == "bad":
+        print("I'm sorry to hear that. Hope things get better soon.")
+    else:
+        print("I see. Sometimes it's hard to put feelings into words.")
+
+
+def say_goodbye(name):
+    print(f"It was nice chatting with you, {name}! Goodbye!")
+
+if __name__ == "__main__":
+    user_data = greet_user()
+    user_name = user_data["name"]
+    user_age = user_data["age"]
+    
+    print(f"Great! So you are {user_name} and you are {user_age} years old.")
+
+    user_mood = get_mood()
+    respond_to_mood(user_mood)
+    say_goodbye(user_name)
