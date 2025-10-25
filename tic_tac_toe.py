@@ -77,5 +77,6 @@ def game():
     if a=="Yes":
         game() 
     else:
-        print("Thank you for playing")
+        print("Thank you for playing." \
+        "The game was made by Madhav.inc")
 game()                   
